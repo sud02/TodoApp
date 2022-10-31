@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>
+    TODOLIST
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="/css/style.css">
+
+<body>
+  <div class="container">
+    <div style="text-align: center;">
+
+      <p class="para-g">TO-DO LIST</p>
+      <div class="box" id="heading">
+        <p>
+          <%= listTitle %>
+        </p>
+      </div>
+    </div>
+
+    <form class="item form-group" action="/" method="post">
+      <input name="newItem" class="form-field" placeholder="Enter task" id="input" autocomplete="off">
+      <button class="b1" id="add">ADD</button>
+    </form>
+
+    <!-- <div align="center" class="task-list"> -->
+      <% newListItems.forEach(function(item) { %>
+        <form style="margin: 0; border: soli;"action="/delete" method="post">
+          <div class="task-name" style="display: inline-block;" id="task-list">
+            <p class="task-box">
+              <%= item %>
+            </p>
+          </div>
+          <button name="delBtn" value="<%=item%>" type="submit" class="dlt-button"><i class="material-icons">delete</i></button>
+        </form>
+        <% }) %>
+    <!-- </div> -->
+  </div>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
+
+<!-- &#177 -->
+<!-- for (let i=0; i<newListItems.length; i++) -->

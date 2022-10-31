@@ -1,0 +1,157 @@
+html,body{
+ font-family: 'Alkalami', serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+:root {
+
+  --input-color: #020202;
+  --input-border: #719fed;
+  --input-background: #fff;
+  --input-placeholder: #000000;
+
+  --input-border-focus: #275EFE;
+
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  outline: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border 0.3s ease;
+  
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+  }
+Center
+body {
+  min-height: 100vh;
+  font-family: 'Mukta Malar', Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F5F9FF;
+}
+
+.container{
+  background-size: 100%;
+  width: 450px;
+  height: 730px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: solid 1px;
+ border-color: white;
+ padding-left: 50px;
+ padding-right: 50px;
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+ background-color: white;
+ border-radius: 4px;
+ padding-top: 25px;
+
+}
+.b1 {
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 4px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.b1:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.b1:active {
+  transform: scale(0.95);
+}
+.form-group{
+  padding-bottom: 20px;
+}
+.para-g{
+  font-weight: 700;
+  font-size:25px;
+  margin: 0;
+}
+.task-list{
+  border: solid;
+}
+.task-name{
+  width: 200px;
+}
+.material-icons{
+  font-size: 15px;
+}
+.dlt-button{
+  margin-top:5px;
+  margin-left: 5px
+  
+}
+.task-box{
+  text-align: center;
+  margin: 5px;
+  padding-top: 3px;
+  font-weight: 700;
+
+}
+.dlt-button{
+  position: absolute;
+  right: 60px;
+}
